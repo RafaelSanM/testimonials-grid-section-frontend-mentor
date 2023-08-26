@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.81rem;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: var(--Light-grayish-blue);
+    min-height: 100vh;
+}
+
+.container-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.308rem;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 12.692rem;
+    margin-bottom: 12.692rem;
+    max-width: 65%;
+}
+
+.container-section>* {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-radius: 10px;
+    padding: 1.9rem 2.6rem;
+}
+
+.section-1,
+.section-2,
+.section-5 {
+    color: var(--white);
+}
+
+.section-3,
+.section-4 {
+    background-color: var(--white);
+    color: var(--Very-dark-blackish-blue);
+}
+
+.section-1 {
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    position: top right;
+    background-color: var(--moderate-violet);
+    grid-column: span 2;
+}
+
+.section-2 {
+    background-color: var(--dark-grayish-blue);
+}
+
+.section-3 {
+    grid-row: span 2;
+}
+
+.section-3 .content p {
+    color: var(--dark-grayish-blue);
+}
+
+.section-5 {
+    background-color: var(--Very-dark-blackish-blue);
+    grid-column: span 2;
+}
+
+
+/* AUTHOR */
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-1 .info,
+.section-2 .info,
+.section-5 .info {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.section-1 .content,
+.section-2 .content,
+.section-5 .content {
+    color: var(--white);
+}
+
+.description,
+.content p {
+    opacity: 50%;
+}
+
+.description {
+    font-size: 11px;
+}
+
+/** Author Images **/
+
+.author img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.section-1 .author img,
+.section-5 .author img {
+    border-style: solid;
+    border-width: 2px;
+}
+
+.section-5 .author img {
+    border-color: var(--modarate-violet);
+}
+
+.section-1 .author img {
+    border-color: var(--light-white);
+}
+
+/** Content **/
+
+.content h3 {
+    font-size: 1.5rem;
+    word-spacing: 1.7px;
+    font-weight: 600;
+}
+
+.content p {
+    font-size: 1rem;
+    padding-top: 0.4rem;
+    line-height: 1.4rem;
+    margin-top: 20px;
+}
